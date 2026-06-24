@@ -99,6 +99,24 @@
     color: var(--accent);
   }
 
+  nav .nav-links {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+  }
+
+  nav .nav-links a {
+    font-size: 14px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    transition: color 0.2s;
+  }
+
+  nav .nav-links a:hover {
+    color: var(--text);
+  }
+
   nav .nav-cta {
     display: inline-block;
     padding: 10px 22px;
@@ -834,6 +852,10 @@
       text-align: center;
     }
 
+    nav .nav-links {
+      display: none;
+    }
+
     nav .nav-cta {
       font-size: 13px;
       padding: 9px 16px;
@@ -861,6 +883,11 @@
 <nav>
   <div class="nav-inner">
     <a href="#hero" class="logo">Scaling <span>in Christ</span></a>
+    <div class="nav-links">
+      <a href="service-websites.html">Websites</a>
+      <a href="service-google-ads.html">Google Ads</a>
+      <a href="service-meta-ads.html">Meta Ads</a>
+    </div>
     <a href="https://calendly.com/scalinginchrist-info/business-strategy-call" target="_blank" rel="noopener" class="nav-cta">Book a Free Call</a>
   </div>
 </nav>
@@ -1098,3 +1125,5 @@
 
 </body>
 </html>
+
+
